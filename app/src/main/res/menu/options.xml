@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/refresh"
+        android:icon="@android:drawable/ic_popup_sync"
+        app:showAsAction="always"
+        android:title="@string/refresh" />
+    <item
+        android:id="@+id/now_playing"
+        android:title="@string/now_playing" />
+    <item
+        android:id="@+id/upcoming"
+        android:title="@string/upcoming" />
+    <item
+        android:id="@+id/popular"
+        android:title="@string/popular" />
+</menu>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ramson.appmachines.silverscreenratings.MovieActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/colorMovieBkg">
+
+        <ImageView
+            android:id="@+id/img_default"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:layout_marginEnd="@dimen/screen_margin"
+            android:layout_marginRight="@dimen/screen_margin"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/poster_img" />
+
+        <ImageView
+            android:id="@+id/img_poster"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:layout_marginEnd="@dimen/screen_margin"
+            android:layout_marginRight="@dimen/screen_margin"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/poster_img" />
+
+
+        <TextView
+            android:id="@+id/txt_m_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/img_default"
+            android:layout_toRightOf="@+id/img_default"
+            android:textColor="@color/colorTextBold"
+            android:textSize="@dimen/text_bold"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_lang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_m_name"
+            android:layout_toEndOf="@+id/img_default"
+            android:layout_toRightOf="@+id/img_default"
+            android:textColor="@color/colorTextBold" />
+
+        <ImageView
+            android:id="@+id/img_clock"
+            android:layout_width="@dimen/icon_height"
+            android:layout_height="@dimen/icon_height"
+            android:layout_below="@+id/txt_lang"
+            android:layout_marginTop="@dimen/icon_top_margin"
+            android:layout_toEndOf="@+id/img_default"
+            android:layout_toRightOf="@+id/img_default"
+            android:background="@color/colorMovieBkgDull"
+            app:srcCompat="@android:drawable/ic_lock_idle_alarm" />
+
+        <TextView
+            android:id="@+id/txt_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/img_clock"
+            android:layout_alignTop="@+id/img_clock"
+            android:layout_marginLeft="@dimen/icon_text_gap"
+            android:layout_marginStart="@dimen/icon_text_gap"
+            android:layout_toEndOf="@+id/img_clock"
+            android:layout_toRightOf="@+id/img_clock"
+            android:gravity="center_vertical"
+            android:textColor="@color/colorTextBold" />
+
+
+        <ImageView
+            android:id="@+id/img_cal"
+            android:layout_width="@dimen/icon_height"
+            android:layout_height="@dimen/icon_height"
+            android:layout_below="@+id/img_clock"
+            android:layout_toEndOf="@+id/img_default"
+            android:layout_toRightOf="@+id/img_default"
+            android:background="@color/colorMovieBkgDull"
+            app:srcCompat="@android:drawable/ic_menu_my_calendar" />
+
+        <TextView
+            android:id="@+id/txt_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/img_cal"
+            android:layout_alignTop="@+id/img_cal"
+            android:layout_marginLeft="@dimen/icon_text_gap"
+            android:layout_marginStart="@dimen/icon_text_gap"
+            android:layout_toEndOf="@+id/img_cal"
+            android:layout_toRightOf="@+id/img_cal"
+            android:gravity="center_vertical"
+            android:textColor="@color/colorTextBold" />
+
+        <ImageView
+            android:id="@+id/img_star"
+            android:layout_width="@dimen/icon_height"
+            android:layout_height="@dimen/icon_height"
+            android:layout_below="@+id/img_cal"
+            android:layout_toEndOf="@+id/img_default"
+            android:layout_toRightOf="@+id/img_default"
+            android:background="@color/colorMovieBkgDull"
+            app:srcCompat="@android:drawable/star_on" />
+
+        <TextView
+            android:id="@+id/txt_user_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/img_star"
+            android:layout_alignTop="@+id/img_star"
+            android:layout_marginLeft="@dimen/icon_text_gap"
+            android:layout_toEndOf="@+id/img_star"
+            android:layout_toRightOf="@+id/img_star"
+            android:gravity="center_vertical"
+            android:text="%"
+            android:textColor="@color/colorTextBold" />
+
+        <LinearLayout
+            android:id="@+id/ll_trailor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_star"
+            android:layout_marginTop="@dimen/trailer_margin_top"
+            android:layout_toEndOf="@+id/img_default"
+            android:layout_toRightOf="@+id/img_default"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/trailer_padding_top"
+            android:paddingTop="@dimen/trailer_padding_top">
+
+            <ImageView
+                android:id="@+id/img_play"
+                android:layout_width="@dimen/icon_height"
+                android:layout_height="@dimen/icon_height"
+                android:background="@color/colorTextSpecial"
+                app:srcCompat="@android:drawable/ic_media_play" />
+
+            <TextView
+                android:id="@+id/txt_trailer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/icon_text_gap"
+                android:layout_marginStart="@dimen/icon_text_gap"
+                android:text="@string/watch_trailer"
+                android:textColor="@color/colorTextSpecial"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/colorOverviewBkg">
+
+        <TextView
+            android:id="@+id/txt_overview_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/overview"
+            android:textStyle="bold" />
+
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_overview_label">
+
+            <TextView
+                android:id="@+id/txt_overview_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

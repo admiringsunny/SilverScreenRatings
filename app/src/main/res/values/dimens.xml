@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="screen_margin">5dp</dimen>
+    <dimen name="text_gap">20dp</dimen>
+    <dimen name="text_bold">20sp</dimen>
+    <dimen name="list_divider_height">20dp</dimen>
+    <dimen name="trailer_margin_top">20dp</dimen>
+    <dimen name="trailer_padding_top">15dp</dimen>
+    <dimen name="icon_height">20dp</dimen>
+    <dimen name="icon_top_margin">10dp</dimen>
+    <dimen name="icon_text_gap">5dp</dimen>
+    <dimen name="footer_height">40dp</dimen>
+</resources>
