@@ -52,12 +52,14 @@ public class MoviesListActivity extends AppCompatActivity implements AdapterView
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
         // initialize all view items in Activity
         initializeViews();
 
         // fetch data from API and set to respective views
         setMovieDataFromApi();
+
+
+
     }
 
 
@@ -85,7 +87,7 @@ public class MoviesListActivity extends AppCompatActivity implements AdapterView
         if (networkInfo != null && networkInfo.isConnected()) {
             Log.d(TAG, "networkInfo is Connected");
             Toast.makeText(this, "Loading Movies...", Toast.LENGTH_SHORT).show();
-//         if connected: load data in Background/AsyncTask
+//         if connected: load data in Background(AsyncTask)
             new MoviesFromAPI().execute(getMoviesListUrl()); // set movies from API by executing Async class
         } else {
             Log.e(TAG, "networkInfo Not Connected()");
@@ -103,7 +105,11 @@ public class MoviesListActivity extends AppCompatActivity implements AdapterView
                 // + "&page=" // page
                 // + "1"      // pageNo
         String base_url = getResources().getString(R.string.base_api);
-        if (category == null) category = getResources().getString(R.string.category_now);
+        if (category == null){
+            category = getResources().getString(R.string.category_now);
+            // set ActionBar Title
+            getSupportActionBar().setTitle(getResources().getString(R.string.now_playing));
+        }
         String api_key = getResources().getString(R.string.api_key);
         String page = getResources().getString(R.string.page);
         if (pageNo < 1) pageNo = 1;
@@ -276,6 +282,7 @@ public class MoviesListActivity extends AppCompatActivity implements AdapterView
                 break;
         }
         setMovieDataFromApi();
+        if (item.getItemId() != R.id.refresh) getSupportActionBar().setTitle(item.getTitle());
         return super.onOptionsItemSelected(item);
     }
 }
