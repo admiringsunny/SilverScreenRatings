@@ -24,7 +24,7 @@ import java.net.URL;
 
 public class TrailerActivity extends AppCompatActivity {
 
-    private static final String TAG = "TrailerActivity";
+    private static final String TAG = TrailerActivity.class.getSimpleName();
     private String video_url;
 
     @Override

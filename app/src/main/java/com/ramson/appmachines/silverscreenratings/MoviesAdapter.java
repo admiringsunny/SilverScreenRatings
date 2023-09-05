@@ -16,7 +16,7 @@ import java.util.List;
 
 public class MoviesAdapter extends BaseAdapter {
 
-    private static final String TAG = "MoviesAdapter";
+    private static final String TAG = MoviesAdapter.class.getSimpleName();
     private Context context;
     private List<Movie> movies;
     private LayoutInflater inflater;

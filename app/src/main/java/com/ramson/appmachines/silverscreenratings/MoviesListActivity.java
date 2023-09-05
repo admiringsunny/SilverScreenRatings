@@ -35,7 +35,7 @@ import java.util.List;
 
 public class MoviesListActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
 
-    public static final String TAG = "MoviesListActivity";
+    public static final String TAG = MoviesListActivity.class.getSimpleName();
 
     private int pageNo;
     private ListView list_movies;
