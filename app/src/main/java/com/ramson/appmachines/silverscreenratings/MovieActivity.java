@@ -32,7 +32,7 @@ import java.net.URL;
 
 public class MovieActivity extends AppCompatActivity {
 
-    public static final String TAG = "MovieActivity";
+    public static final String TAG = MovieActivity.class.getSimpleName();
     private ImageView img_poster;
     private TextView txt_m_name, txt_date, txt_user_score, txt_overview_value, txt_lang, txt_duration;
     private LinearLayout ll_trailer;
