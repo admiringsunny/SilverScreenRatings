@@ -71,7 +71,7 @@ public class MoviesListActivity extends AppCompatActivity implements AdapterView
 //        initialize movies ListView
         list_movies = (ListView) findViewById(R.id.list_movies);
 
-// TODO: 13-Nov-23 : MoviesListAdapter -> Retrofit
+// MoviesListAdapter
 //         initialize a custom adapter to add movies to the list
         moviesAdapter = new MoviesListAdapter(MoviesListActivity.this, movies);
 
