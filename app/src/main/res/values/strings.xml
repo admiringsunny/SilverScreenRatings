@@ -1,46 +1,6 @@
 <resources>
     <string name="app_name">Silver Screen Ratings</string>
 
-    <!--MoviesListActivity-->
-    <!--moviesListUrl = base + category + api_key + page + page_no-->
-    <!--Ex: moviesListUrl = "http://api.themoviedb.org/3/movie" + "/now_playing" + "?api_key=b3e0f31d9441c58e9f2e440f0b94d04a" + "&page=" + "1"-->
-    <!--1_base-->
-    <string name="base_api">http://api.themoviedb.org/3/movie</string>
-    <!--2_mid: (any of the selected categories) or (movie_id) or (movie_id + videos) -->
-    <!--categories-->
-    <string name="category_upcoming">/upcoming</string>
-    <string name="category_now">/now_playing</string>
-    <string name="category_popular">/popular</string>
-    <!--3_api_key-->
-    <string name="api_key">\?api_key=b3e0f31d9441c58e9f2e440f0b94d04a</string>
-    <!--4_page-->
-    <string name="page">&amp;page=</string>
-    <!--5_page_no: from api-->
-
-
-    <!--MovieActivity-->
-    <!--movie_url = base + movie_id + api_key-->
-    <!--Ex: movie_url = "http://api.themoviedb.org/3/movie" + "/movie_id" + "?api_key=b3e0f31d9441c58e9f2e440f0b94d04a"-->
-    <!--1_base: same-->
-    <!--2_movie_id: from api-->
-    <!--3_api_key: same-->
-
-    <!--video_url-->
-    <!--video_url = base_api + / + movie_id + videos + api_key-->
-    <string name="videos">/videos</string>
-
-    <!--IMAGE-->
-    <!--image_poster_path = base_img_url + poster_path-->
-    <string name="base_img_url">https://image.tmdb.org/t/p/w500</string>
-    <!--backdrop_path/poster_path: from api-->
-
-
-    <!--TrailerActivity-->
-    <!--trailer_url = base_youtube_url + video_key-->
-    <string name="base_youtube_url">https://www.youtube.com/watch?v=</string>
-    <!--video_key: from api-->
-
-
     <!--Genre IDs-->
     <string name="genre_id_28">Action</string>
     <string name="genre_id_16">Animated</string>
@@ -71,6 +31,7 @@
     <string name="upcoming">Upcoming</string>
     <string name="now_playing">Now Playing</string>
     <string name="refresh">Refresh</string>
-
+    <string name="loading_movies">Loading Movies...\n</string>
+    <string name="loading_movie_details">Loading Movie Details...\n</string>
 
 </resources>
