@@ -5,12 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.ramson.appmachines.silverscreenratings.MovieActivity">
+    tools:context="com.ramson.appmachines.silverscreenratings.activities.MovieActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
+        android:padding="@dimen/screen_margin"
         android:background="@color/colorMovieBkg">
 
         <ImageView
@@ -151,10 +152,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:layout_marginLeft="@dimen/icon_text_gap"
-                android:layout_marginStart="@dimen/icon_text_gap"
+                android:paddingLeft="@dimen/icon_text_gap"
+                android:paddingStart="@dimen/icon_text_gap"
+                android:paddingRight="@dimen/icon_text_gap"
+                android:paddingEnd="@dimen/icon_text_gap"
                 android:text="@string/watch_trailer"
-                android:textColor="@color/colorTextSpecial"
+                android:background="@color/colorTextSpecial"
+                android:textColor="@android:color/background_light"
                 android:textStyle="bold" />
 
         </LinearLayout>
@@ -166,7 +170,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:background="@color/colorOverviewBkg">
+        android:background="@color/colorOverviewBkg"
+        android:padding="@dimen/screen_margin">
 
         <TextView
             android:id="@+id/txt_overview_label"

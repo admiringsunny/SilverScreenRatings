@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/SilverScreenRatings.iml" filepath="$PROJECT_DIR$/.idea/SilverScreenRatings.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SilverScreenRatings.iml" filepath="$PROJECT_DIR$/.idea/modules/SilverScreenRatings.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/SilverScreenRatings.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/SilverScreenRatings.app.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/SilverScreenRatings.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/SilverScreenRatings.app.androidTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/SilverScreenRatings.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/SilverScreenRatings.app.main.iml" />

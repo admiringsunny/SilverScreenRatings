@@ -1,4 +1,4 @@
-package com.ramson.appmachines.silverscreenratings;
+package com.ramson.appmachines.silverscreenratings.activities;
 
 import android.content.Context;
 import android.content.Intent;
@@ -6,10 +6,14 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.Uri;
 import android.os.AsyncTask;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.ramson.appmachines.silverscreenratings.R;
+import com.ramson.appmachines.silverscreenratings.util.Constants;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -24,7 +28,7 @@ import java.net.URL;
 
 public class TrailerActivity extends AppCompatActivity {
 
-    private static final String TAG = TrailerActivity.class.getSimpleName();
+    private static final String TAG = "TrailerActivity";
     private String video_url;
 
     @Override
@@ -100,7 +104,7 @@ public class TrailerActivity extends AppCompatActivity {
                 if (video_key != null && !video_key.equals("")) {
                     //** -> set video_url = base_youtube_url + video_key
                     //* [Eg: https://www.youtube.com/watch?v=ue80QwXMRHg]
-                    String trailer_url = getResources().getString(R.string.base_youtube_url) + video_key;
+                    String trailer_url = Constants.BASE_YOUTUBE_URL + video_key;
                     Log.d(TAG, "video_url=" + trailer_url);
 
                     Intent intent = new Intent(Intent.ACTION_VIEW);

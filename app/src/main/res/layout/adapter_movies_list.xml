@@ -9,17 +9,17 @@
 
     <ImageView
         android:id="@+id/img_default"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:adjustViewBounds="true"
         android:layout_margin="@dimen/screen_margin"
         android:src="@drawable/backdrop_img" />
-    
+
     <ImageView
         android:id="@+id/backdrop_img"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"

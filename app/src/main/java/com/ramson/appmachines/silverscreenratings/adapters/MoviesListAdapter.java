@@ -1,4 +1,4 @@
-package com.ramson.appmachines.silverscreenratings;
+package com.ramson.appmachines.silverscreenratings.adapters;
 
 import android.content.Context;
 import android.util.Log;
@@ -9,19 +9,21 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.ramson.appmachines.silverscreenratings.R;
+import com.ramson.appmachines.silverscreenratings.models.Movie;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
 
-public class MoviesAdapter extends BaseAdapter {
+public class MoviesListAdapter extends BaseAdapter {
 
-    private static final String TAG = MoviesAdapter.class.getSimpleName();
+    private static final String TAG = "MoviesAdapter";
     private Context context;
     private List<Movie> movies;
     private LayoutInflater inflater;
 
-    public MoviesAdapter(Context context, List<Movie> movies) {
+    public MoviesListAdapter(Context context, List<Movie> movies) {
         this.context = context;
         this.movies = movies;
     }
@@ -46,7 +48,7 @@ public class MoviesAdapter extends BaseAdapter {
 
         if (null == view) {
             inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            view = inflater.inflate(R.layout.movies_list_items, null);
+            view = inflater.inflate(R.layout.adapter_movies_list, null);
         }
 
         Movie movie = movies.get(i);

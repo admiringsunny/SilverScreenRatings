@@ -1,4 +1,4 @@
-package com.ramson.appmachines.silverscreenratings;
+package com.ramson.appmachines.silverscreenratings.models;
 
 public class Movie {
 
